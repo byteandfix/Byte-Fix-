@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace; /* Usando a fonte Roboto Mono */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Preenche a altura da viewport */
+}
+
+header {
+    display: flex; /* Flexbox para centralizar o título */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    position: fixed; /* Fixa no topo */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Preenche a largura total */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 10px 0; /* Espaço interno */
+    z-index: 1000; /* Mantém em cima de outros elementos */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #fff; /* Cor do texto */
+}
+
+main {
+    text-align: center; /* Centraliza o texto */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Começa abaixo */
+    transition: opacity 1s ease, transform 1s ease; /* Transições suaves */
+    display: flex; /* Flexbox para centralizar conteúdo */
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    justify-content: center; /* Centraliza conteúdo verticalmente */
+    height: 100vh; /* Preenche a altura da viewport */
+}
+
+/* Hiding main content initially */
+.hidden {
+    display: none; /* Mantém o elemento oculto */
+}
+
+h2 {
+    font-size: 2rem; /* Tamanho do título principal */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+p {
+    font-size: 1.2rem; /* Tamanho do texto */
+}
+
+/* Loading screen */
+#loading-screen {
+    display: flex; /* Flexbox para centralizar */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    position: fixed; /* Fixa na tela */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Preenche a largura total */
+    height: 100%; /* Preenche a altura total */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    z-index: 1000; /* Mantém em cima de outros elementos */
+    pointer-events: all; /* Captura todos os eventos de mouse */
+}
+
+.giphy-embed {
+    pointer-events: none; /* Desativa interações com o iframe */
+}
+
+.fade-in {
+    opacity: 0; /* Começa invisível */
+    transition: opacity 1.5s ease-in; /* Transição de opacidade */
+}
+
+.fade-in-active {
+    opacity: 1; /* Torna-se visível */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex; /* Flexbox para os ícones sociais */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Margem superior */
+}
+
+.social-icon {
+    width: 50px; /* Tamanho dos ícones sociais */
+    margin: 0 10px; /* Margem lateral */
+    cursor: pointer; /* Mão como cursor ao passar o mouse */
+    transition: transform 0.2s; /* Transição ao passar o mouse */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Empurra o rodapé para o final */
+    padding: 20px; /* Espaço interno */
+    text-align: center; /* Centraliza o texto */
+    color: #ffffff5f; /* Cor do texto */
+}

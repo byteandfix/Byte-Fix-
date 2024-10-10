@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte&Fix™</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="loading-screen">
+        <iframe src="https://giphy.com/embed/3AMRa6DRUhMli" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    
+    <header>
+        <h1>Byte&Fix™</h1>
+    </header>
+
+    <main class="hidden fade-in">
+        <h2>Bem-vindo</h2>
+        <p>Seu parceiro confiável em soluções de informática!</p>
+        
+        <div class="social-icons">
+            <a href="https://discord.gg/H7DGUdBXKd" target="_blank">
+                <img src="discordia.png" alt="Discord Byte&Fix" class="social-icon">
+            </a>
+            <a href="https://w.app/byteandfix" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp Byte&Fix" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/bytenfix/profilecard/?igsh=MWd1eWd0bWtvbWMzNg==" target="_blank">
+                <img src="instagram.png" alt="Instagram Byte&Fix" class="social-icon">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p> Byte&Fix™ - Since 2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script>
+        // Remover loading após 3 segundos
+        setTimeout(function() {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.querySelector('main').classList.remove('hidden');
+            document.querySelector('main').classList.add('fade-in-active');
+        }, 3000);
+    </script>
+</body>
+</html>
